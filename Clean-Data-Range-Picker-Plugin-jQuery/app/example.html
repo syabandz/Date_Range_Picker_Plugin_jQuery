@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8" />
+
+    <title>Clean Data Range Picker Plugin Demo</title>
+    <meta name="description" content="">
+<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:300,400,700&amp;subset=cyrillic-ext" rel="stylesheet" />
+    <link href="../src/css/jquery.daterangepicker.css" rel="stylesheet" />
+
+    <style>
+    h1 { margin: 30px auto 30px auto; }
+        body {
+            color: #333;
+            font-family: "PT Sans",sans-serif;
+            -webkit-font-smoothing: antialiased;
+            font-size: 18px;
+            line-height: 1.444;
+            font-weight: 400;
+            background: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        #container { margin: 150px auto; max-width: 400px; }
+        @media (max-width: 480px) {
+            body {
+                width: 100%;
+            }
+        }
+        #form {
+            background: #fff;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="https://www.jqueryscript.net/time-clock/Clean-Data-Range-Picker-Plugin-jQuery.html">Download This Plugin</a></li>
+<li><a href="https://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+</ul>
+<div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+    <div id="container">
+<h1>Clean Data Range Picker Plugin Demo</h1>
+
+    <form id="form" method="get">
+
+        <div id="date_range_picker" class="date_range_picker">
+
+            <div class="values">
+                <div class="value date_at">
+                    <span class="date_at"></span>
+                    <input id="date_at" class="date_at" type="hidden" />
+                </div>
+                <div class="to"></div>
+                <div class="value date_to">
+                    <span class="date_to"></span>
+                    <input id="date_to" class="date_to" type="hidden" />
+                </div>
+                <div class="clear"></div>
+            </div>
+
+            <div class="calendar">
+                <div class="button button-prev"></div>
+                <div class="button button-next"></div>
+                <div class="container"></div>
+            </div>
+
+        </div>
+
+    </form>
+</div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="../src/js/jquery.daterangepicker.js"></script>
+    <script>
+    $(window).load(function() {
+        $.DateRangePicker({
+            container: '#date_range_picker',
+
+            date_at: '2018-01-03',
+            date_to: '2018-02-12',
+
+            inactive: 1,
+
+            locale: 'en-US',
+            l: {
+                close: "Close",
+                at: "Check-in",
+                to: "Check-out",
+                days: ["MON","TUE","WED","THUR","FRI","SAT","SUN"],
+                months: ["January","February","March","April","May","June","July","August","September","October","November","December"],
+            }
+        });
+    });
+    </script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
